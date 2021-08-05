@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a fruit from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="Apple">Apple</option>
+  <option value="Kiwi">kiwi</option>
+  <option value="Mango">Mango</option>
+  <option value="watermelon">watermelon</option>
+</select>
+
+
+<p id="demo"></p>
+<style type="text/css">
+    select{
+      color: #11BFE4;
+      background: #140202;
+    }
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>
